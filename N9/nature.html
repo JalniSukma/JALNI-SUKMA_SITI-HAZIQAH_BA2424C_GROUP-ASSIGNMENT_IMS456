@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <TITLE> Nature Discovery </TITLE>
+</HEAD>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: black;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: maroon; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color:  #d80e0e;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color:  #d80e0e;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: maroon;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  color:white;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background:  #dde1e0;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+* {box-sizing: border-box;}
+
+.header {
+  overflow: hidden;
+  background-color:  #dde1e0;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 2px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: right;
+  }
+}
+
+body {
+   background-image: url("1.jpg");
+   background-attachment: fixed;}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #FFEBCD;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+<body>
+<div class="header">
+   <a href="#default" class="logo">NOGORI SOMBILAN</a><img src="h0.gif" style="width: 10%"><font face="Harlow Solid Italic">Best of Negeri Sembilan. Let's Explore!</font>
+  <div class="header-right">
+    <form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+</form>
+  </div>
+</div>
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About N9<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="About N9.html">Heritage and Culture</a>
+      <a href="History.html">History</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Destination <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="nature.html">Nature</a>
+      <a href="beach.html">Beach</a>
+      <a href="museum.html">Museum</a>
+    </div>
+  </div> 
+   <div class="subnav">
+  <a href="Food.html">Food & Beverages</a>
+  </div> 
+  <div class="subnav">
+  <a href="packages.html">Packages</a>
+  </div>
+  <a href="about us.html">About Us</a>
+  </div>
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1><font color="white">Nature Discovery</h1>
+<hr>
+
+<h2>"By discovering nature, you discover yourself"</h2></font>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="n1.jpg" alt="Parents" style="width:100%">
+      <h3>Besar Hantu Mountain</h3>
+      <p>Gunung Besar Hantu is a 15.3 kilometer moderately trafficked out and back trail located near Ampang, Selangor, Malaysia that features a river and is rated as difficult. The trail is primarily used for hiking. Gunung Besar Hantu is the highest mountain in Negeri Sembilan.  </p>
+      <p><b>Operating Hours:</b></p>
+      <ul><li> Daily (9:30am – 5:30pm) <br> 
+	  <p><b>Location:</b></p>
+	  Jelebu, Negeri Sembilan, Malaysia
+    </div>
+  </div>
+ <div class="column">
+    <div class="content"> 
+   <img src="n2.jpg" alt="Nature" style="width:100%">
+      <h3>Berembun Forest</h3>
+      <p>The Berembun Forest is located in Negeri Sembilan. It is a protected forest that is almost 4,000 acres in size and up to 3,900 ft high. The forest is gazetted as a protected area during the colonial times as it is also the water catchment area, providing half the
+water supply for Seremban.</p>
+      <p> The original vegetation was dominated by Keruing, Meranti and Balau of the Shorea species which generally dominate the low-lying forests in Malaysia. Logging was conducted on the fringes of the reserve and the Orang Asli Reserve Land in the 1950’s and 1980’s but regeneration has done well in the area.</p>
+      <p><b>Operating Hours: </b></p>
+      <ul><li>Daily 
+      <p><b>Location:</b></p> 
+      Seremban, Negeri Sembilan, Malaysia
+    </div>
+  </div>
+  <!-- END GRID -->
+</div>
+
+  <div class="content">
+  <img src="n3.jpg" alt="Bear" style="width:100%">
+  <h3>Sungai Menyala Edu-Ecotourism Center</h3>
+  <p>Sungai Menyala Edu Ecotourism Centre was opened to the public around 2010 in the Sungai Menyala Forest Reserve which covers an area of 1,280 hectares near Port Dickson in Negeri Sembilan. 
+ 
+  <p>The forest is one of the largest lowland Dipterocarp forests in the region. Much of it was logged back in the 1950s so what you see today is mostly regenerated growth but there are some stretches of virgin forest including a 300-year-old hollow tree and a 45-metre high Jelutong tree which might be the tallest in Malaysia. Red Meranti and Keruing are the most common trees here. </p>
+  <p><b>Operating Hours: </b></p>
+  		<ul><p><li>Daily (8:00 am-6:00 pm)
+  		       
+  <p><b>Location: </b></p>
+  		Port Dickson, Negeri Sembilan, Malaysia
+</div>
+
+<!-- END MAIN -->
+</div>
+
+ <p><div class="column"></p>
+    <div class="content">
+   <img src="n4.jpg" alt="Nature" style="width:100%">
+      <h3>Kenaboi Forest</h3>
+      <p>Kenaboi Forest Reserve is located in the district of Jelebu, Negeri Sembilan, which is about 85 km from Kuala Lumpur. Standing at 1,462 meters, Gunung Besar Hantu, which is the highest peak in Negeri Sembilan, is situated in this forest reserve along with its highest waterfall, known as Lata Kijang (Deer Waterfall). </p>
+  		<p><b>Operating Hours: </b></p>
+  		<ul><li>Daily
+ 		<p><b> Location: </b></p> 
+ 			   Jelebu, Negeri Sembilan, Malaysia<br>
+       </div>
+    </div>
+  </div>
+
+  <p><div class="column"></p>
+    <div class="content">
+   <img src="n5.jpg" alt="Nature" style="width:100%">
+      <h3>Seremban Orchid Park</h3>
+      <p>The town of Seremban in Negeri Sembilan now has a new attraction to lure visitors, the Seremban Orchid Park.
+The newly opened 1.62-hectare park is part of the Seremban Lake Park.The orchid park is developed on a reserve land that has been gazetted for recreational purposes. The development is done in phases at a cost of around RM4 million.There are currently 40 types of orchids at the park, all of them local varieties.
+</p>
+  		<p><b>Operating Hours: </b></p>
+  		<ul><li>Daily (9:00 am - 5:00 pm) </li></ul>
+ 		<p><b> Location:  </b></p>
+ 			   Seremban, Negeri Sembilan, Malaysia<br></div>
+       </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+ <p><A HREF="https://www.facebook.com/n9tourism/"><img src="facebook.png" alt="image" height="11%" width="4.5%"></A> &nbsp; <A HREF="https://twitter.com/n9tourism?lang=en"><img src="twitter1.png" alt="image" height="11%" width="4.5%"></A> &nbsp;<A HREF="https://www.instagram.com/visit_n9/?hl=en"><img src="instagram.png" alt="image" height="11%" width="4.5%"></A> &nbsp;</A> <A HREF="https://www.youtube.com/watch?v=_3hDxXpxjZ4"><img src="youtube.png" alt="image" height="11%" width="4.5%"></A></center></p>
+
+</div>
+
+
+</body>
+</html>

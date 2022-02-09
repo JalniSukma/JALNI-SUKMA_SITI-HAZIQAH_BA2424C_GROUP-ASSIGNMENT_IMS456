@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>NEGERI SEMBILAN, The Best Holiday Destination!</title>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: black;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: maroon; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color:  #d80e0e;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color:  #d80e0e;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: maroon;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  color:white;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background:  #dde1e0;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+* {box-sizing: border-box;}
+
+.header {
+  overflow: hidden;
+  background-color:  #dde1e0;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 2px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: right;
+  }
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1250px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 4px;
+  width: 4px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 30%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.middlecolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color:  #c4d4d6;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+   <a href="#default" class="logo">NOGORI SOMBILAN</a><img src="h0.gif" style="width: 10%"><font face="Harlow Solid Italic">Best of Negeri Sembilan. Let's Explore!</font>
+  <div class="header-right">
+    <form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+</form>
+  </div>
+</div>
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About N9<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="About N9.html">Heritage and Culture</a>
+      <a href="History.html">History</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Destination <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="nature.html">Nature</a>
+      <a href="beach.html">Beach</a>
+      <a href="museum.html">Museum</a>
+    </div>
+  </div> 
+   <div class="subnav">
+  <a href="Food.html">Food & Beverages</a>
+  </div> 
+  <div class="subnav">
+  <a href="packages.html">Packages</a>
+  </div>
+  <a href="about us.html">About Us</a>
+  </div>
+
+<div class="row">
+  <div class="middlecolumn">
+    <div class="card">
+      <h2><u>HERITAGE OF NEGERI SEMBILAN</h2></u>
+      <h5>Heritage Zones</h5>
+      <img src="m1.jpg" style="width: 400px;">&nbsp;&nbsp;<img src="m2.jpg" style="width: 400px;">&nbsp;&nbsp;<img src="m3.jpg" style="width: 400px;">
+
+
+      <p>Later during the 16th century, these Minangkabau migrated to Peninsular Malaysia. Also evident around the state is the horn-roof style of architecture typical of the predominant ‘bull’ element of the Minangkabau. Geographically, the state covers a large mass from sandy seaside hotspots to tranquil kampung-style districts. The Minangkabau is compact enough to be explored by bus or taxi. </p>
+
+      
+    </div>
+
+    <div class="card">
+      <h2><u>CULTURE OF N9</h2></u>
+      <h5>Local Cultures</h5>
+      <img src="c1.jpg" style="width: 420px;">&nbsp;&nbsp;<img src="c2.png" style="width: 420px;">&nbsp;&nbsp;<img src="c3.png" style="width: 385px;">
+      <p>The Minangkabau brought along with them a rich cultural heritage which is still preserved and practised today as the fascinating ‘Adat Pepatih’, a matrilineal system of inheritance and administration that is unique to the State. A maritrilineal system is one where the wife is the head of the household and inheritance passes from the mother to the daughter. The Minangkabaus are divided into twelve suku or clans, and marriage between between members of the same clan is forbidden. The Minangkabau influence in the state can be found in dances and food as well</p>
+
+<p><b><font color="tomato">Cuisine</b></p></font>
+
+<p>Traditional Negeri Sembilan food is hot and spicy, as one of the ingredients used is the chili padi, the hottest of chillies. Popular dishes include rendang, (pieces of beef cooked in coconut milk and chillies). One should experience the unique Minangkabau style of cooking, which sees generous portions of 'chili padi' (small & extremely hot chilies) being used. Try the "Masak Lemak Chili Padi - fish, meat, or vegetables cooked in coconut milk blended with turmeric and ground chili padi. Another NS specialty is "Lemang", glutinous rice cooked in coconut milk in a bamboo stem over an open fire. This is normally served with Rendang, a deliciously thick, dry meat curry.</p>
+
+<p><b><font color="blue">Dances</b></p></font>
+
+<p>Negeri Sembilan also boasts traditional music like the Caklempong, Dikir Rebana, Tumbuk Kalang, and Bongai. Even the musical instruments used bear some semblance to Sumatra, the ancestral home of the Minangkabau people. Dances like the tarian lilin (candle dance) and rentak kuda (beat of the horse) are popular. Not to mention the beautifully coordinated graceful movements of the dancers in their colorful costumes in the captivating Tarian Piring and the upbeat tempo of Tarian Randai. Each beat, rhythm and movement in these dances combine to form a story, maybe of a bygone myth or simply a reflection of the lifestyles of another era.</p>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p><A HREF="https://www.facebook.com/n9tourism/"><img src="facebook.png" alt="image" height="11%" width="4.5%"></A> &nbsp; <A HREF="https://twitter.com/n9tourism?lang=en"><img src="twitter1.png" alt="image" height="11%" width="4.5%"></A> &nbsp;<A HREF="https://www.instagram.com/visit_n9/?hl=en"><img src="instagram.png" alt="image" height="11%" width="4.5%"></A> &nbsp;</A> <A HREF="https://www.youtube.com/watch?v=_3hDxXpxjZ4"><img src="youtube.png" alt="image" height="11%" width="4.5%"></A></center></p>
+
+  
+</div>
+
+</body>
+</html>
